@@ -87,7 +87,15 @@ export const LinkBlock = component$(
                       copyToClipboard(getLinkFromKey(urlKey));
                       toaster.add({ title: 'Success', description: 'The url has been copied to the clipboard!' });
                     }),
+                  },       
+                  {
+                   name: 'Edit',
+                   icon: <HiPencilAltOutline />, // Add the appropriate icon for edit
+                   action: $(() => {
+                        onEdit(id); // Implement this function to handle editing
+                    }),
                   },
+                  
                   {
                     name: 'QR',
                     icon: <HiQrCodeOutline />,

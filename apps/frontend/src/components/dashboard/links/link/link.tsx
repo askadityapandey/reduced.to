@@ -7,6 +7,7 @@ import { useToaster } from '../../../toaster/toaster';
 import { copyToClipboard } from '../../../../utils';
 import { LuLineChart } from '@qwikest/icons/lucide';
 import { Link } from '@builder.io/qwik-city';
+import { LinkEditForm } from './link-edit-form';
 
 export interface LinkBlockProps {
   id: string;

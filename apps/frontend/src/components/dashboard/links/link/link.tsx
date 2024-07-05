@@ -89,6 +89,13 @@ export const LinkBlock = component$(
                     }),
                   },
                   {
+                     name: 'Edit',
+                     icon: <HiPencilAltOutline />, // Add the appropriate icon for edit
+                     action: $(() => {
+                        onEdit(id); // Implement this function to handle editing
+                      }),
+                    },
+                  {
                     name: 'QR',
                     icon: <HiQrCodeOutline />,
                     action: $(() => {
